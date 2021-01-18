@@ -11,12 +11,16 @@
     </head>
     <body>
         <header>
-            <nav class="topNav">
+            <nav class="topNav" id="myTopNav">
                 <ul>
-                    <li class="colouredBorder"><a href="about.html">About</a></li>
-                    <li class="colouredBorder"><a href="gamedesign.html">Game Design</a></li>
-                    <li class="colouredBorder"><a href="webdev.html">Web Development</a></li>
-                    <li class="colouredBorder"><a href="">IOS Development</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="webdev.html">Web Development</a></li>
+                    <li><a href="gamedesign.html">Game Design</a></li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i> <!-- used to open and close 
+                            the topNav on small screens.-->
+                      </a>
                   </ul> 
 
             </nav>
