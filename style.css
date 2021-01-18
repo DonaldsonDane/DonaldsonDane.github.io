@@ -8,16 +8,11 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     
 }
-li {
-    list-style-type: none;
-    margin: 20px;
-  }
-
-
 
   .topNav{
       overflow: hidden;
-      padding-top: 10px;
+      padding: 25px;
+
   }
   
 
@@ -37,8 +32,13 @@ li {
     color: white;
   }
 
+  /* When the screen is less than 600 pixels wide, 
+  hide all links, except for the first one ("Home").*/
+
   @media screen and (max-width: 600px) {
-    .topNav a:not(:first-child) {display: none;}
+    .topNav a:not(:first-child) {
+        display: none;
+    }
     .topNav a.icon {
       float: right;
       display: block;
@@ -46,10 +46,12 @@ li {
   }
 
   @media screen and (max-width: 600px) {
-    .topNav.responsive {position: relative;}
+    .topNav.responsive {
+        position: relative;
+    }
     .topNav.responsive a.icon {
       position: absolute;
-      right: 0;
+      right: 0;     
       top: 0;
     }
 
