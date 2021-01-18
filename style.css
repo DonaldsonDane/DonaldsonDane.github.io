@@ -1,9 +1,7 @@
 body{
-    background-image: url("Images/wp5218705-pc-retro-game-wallpapers.jpg");
+    background: #2C2D28;
     background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;   
+    background-attachment: fixed; 
     color: #efdab9;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     
@@ -62,7 +60,7 @@ body{
       }
     }
 
-  .topNav li a:hover{
+  .topNav a:hover{
       color: #78B0A0;   
   }
 
@@ -90,6 +88,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 150px;
 }
 
 .colouredBorder{
@@ -128,7 +127,11 @@ body{
 }
 
 
-
+#GameDesignTitle, #WebDevTitle, #AboutMeTitle{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+}
  
 
 
