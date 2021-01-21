@@ -1,3 +1,11 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
 body{
     background: #2C2D28;
     background-size:cover;
@@ -10,7 +18,6 @@ body{
   .topNav{
       overflow: hidden;
       padding: 25px;
-
   }
   
 
@@ -28,6 +35,7 @@ body{
   .topNav a.active {
     background-color: #0FB499;
     color: white;
+    border-radius: 50%;
   }
 
   /* When the screen is less than 600 pixels wide, 
@@ -61,8 +69,12 @@ body{
     }
 
   .topNav a:hover{
-      color: #78B0A0;   
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    cursor: pointer;
+    border-radius: 50%;
   }
+
 
   /* Hide the link that should open and close the topnav on small screens */
 .topNav .icon {
