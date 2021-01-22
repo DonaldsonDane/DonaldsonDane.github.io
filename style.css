@@ -25,17 +25,23 @@ body{
     text-decoration: none;
     font-size: 17px;
     display: block;
-    padding: 20px;
     text-align: center;
-    color:inherit;
     float: left;
     letter-spacing: 2.5px;
     text-decoration: none;
+    margin: 10px;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #B85F9D;
+    border-radius: 10px;
   }
   .topNav a.active {
     background-color: #0FB499;
     color: white;
-    border-radius: 50%;
+    
   }
 
   /* When the screen is less than 600 pixels wide, 
@@ -69,12 +75,17 @@ body{
     }
 
   .topNav a:hover{
-    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
     cursor: pointer;
-    border-radius: 50%;
+    background-position: right center;
+    color: #fff;
+     text-decoration: none;
+  
   }
 
+
+  
 
   /* Hide the link that should open and close the topnav on small screens */
 .topNav .icon {
