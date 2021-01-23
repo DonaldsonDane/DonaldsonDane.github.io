@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="calc-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="calculator-body">
+          <header>
+            <nav class="topNav" id="myTopNav">
+                    <a href="../index.html">Home</a>
+                    <a href="../about.html" class="active">About</a>
+                    <a href="../webdev.html">Web Development</a>
+                    <a href="../gamedesign.html">Game Design</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i> <!-- used to open and close 
+                            the topNav on small screens.-->
+                      </a>
+            </nav>
+        </header>
+        <h1 id="AboutMeTitle">Calculator</h1>
+        <p>Using HTML, CSS and Javascript</p>
+
+        <p id="time_display">test</p>
+        <div class="calc-container">
+            <div onclick="calcValue(0)" class="calc-item">1</div>
+            <div onclick="calcValue(1)" class="calc-item">2</div>
+            <div onclick="calcValue(2)" class="calc-item">3</div>
+            <div onclick="calcValue(3)" class="calc-item">4</div>
+            <div onclick="calcValue(4)" class="calc-item">5</div>
+            <div onclick="calcValue(5)" class="calc-item">6</div>
+            <div onclick="calcValue(6)" class="calc-item">7</div>
+            <div onclick="calcValue(7)" class="calc-item">8</div>
+            <div onclick="calcValue(8)" class="calc-item">9</div>
+            <div onclick="calcValue(9)" class="calc-item">Clear</div>
+            <div onclick="calcValue(10)" class="calc-item">+</div>
+            <div onclick="calcValue(11)" class="calc-item">-</div>
+            <div onclick="calcValue(12)" class="calc-item">=</div>
+            <div onclick="calcValue(13)" class="calc-item">/</div>
+            <div onclick="calcValue(14)" class="calc-item">*</div>
+          </div> 
+          <p class="numDisplay"></p>
+        
+  
+        <script src="calc-code.js"></script>
+    </body>
+</html>

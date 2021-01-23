@@ -80,7 +80,7 @@ body{
     cursor: pointer;
     background-position: right center;
     color: #fff;
-     text-decoration: none;
+    text-decoration: none;
   
   }
 
@@ -155,7 +155,11 @@ body{
   font-size: 50px;
   font-weight: 300;
 }
- 
 
-
+.calc-project-image{
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  max-height: 50%;
+}
 
