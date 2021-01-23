@@ -156,10 +156,12 @@ body{
   font-weight: 300;
 }
 
-.calc-project-image{
+.calc-project-image, .trash-2D-project-image{
   display: block;
   margin: 0 auto;
   max-width: 50%;
   max-height: 50%;
 }
+
+
 
