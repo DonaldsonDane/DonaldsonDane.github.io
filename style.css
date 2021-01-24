@@ -34,14 +34,30 @@ body{
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #B85F9D;
+    color: inherit;            
     border-radius: 10px;
   }
   .topNav a.active {
-    background-color: #0FB499;
     color: white;
+    --borderWidth: 5px; 
+    border-radius: var(--borderWidth);
+    position: relative;
+    background-color:#2C2D28 ;
     
+  }
+  .topNav a.active:after{
+    content:'';
+  position:absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+
   }
 
   /* When the screen is less than 600 pixels wide, 
