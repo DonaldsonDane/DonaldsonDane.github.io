@@ -156,12 +156,17 @@ body{
   font-weight: 300;
 }
 
-.calc-project-image, .trash-2D-project-image{
+.calc-project-image, .trash-2D-project-image,.masterjumper-image{
   display: block;
   margin: 0 auto;
   max-width: 50%;
   max-height: 50%;
   border: black 5px solid;
+}
+
+
+#trash-game-caption, #calculator-caption, #masterjumper-caption{
+  text-align: center;
 }
 
 
