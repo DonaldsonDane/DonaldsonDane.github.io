@@ -91,7 +91,7 @@ body{
     }
 
   .topNav a:hover{
-    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    background-image: linear-gradient(to right, #2C2D28 10%, grey 50%, #2C2D28 100%);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
     cursor: pointer;
     background-position: right center;
@@ -182,6 +182,11 @@ body{
 
 
 #trash-game-caption, #calculator-caption, #masterjumper-caption{
+  text-align: center;
+}
+#AboutMeInfo{
+  text-transform: capitalize;
+  font-size: 1.5em;
   text-align: center;
 }
 

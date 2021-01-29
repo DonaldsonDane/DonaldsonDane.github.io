@@ -6,48 +6,60 @@
     
   }
 
-
-
-  
-  
-  
   body{
-      background: #2C2D28;
-      background-size:cover;
-      background-attachment: fixed; 
-      color: #efdab9;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      
-  }
-  
-    .topNav{
-        overflow: hidden;
-        padding: 25px;
-    }
+    background: #2C2D28;
+    background-size:cover;
+    background-attachment: fixed; 
+    color: #efdab9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     
+}
   
-    .topNav a{
-      text-decoration: none;
-      font-size: 17px;
-      display: block;
-      text-align: center;
-      float: left;
-      letter-spacing: 2.5px;
-      text-decoration: none;
-      margin: 10px;
-      padding: 15px 45px;
-      text-transform: uppercase;
-      transition: 0.5s;
-      background-size: 200% auto;
-      color: white;            
-      box-shadow: 0 0 20px #B85F9D;
-      border-radius: 10px;
-    }
-    .topNav a.active {
-      background-color: #0FB499;
-      color: white;
-      
-    }
+  .topNav{
+    overflow: hidden;
+    padding: 25px;
+}
+
+
+.topNav a{
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+  float: left;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  margin: 10px;
+  padding: 15px 45px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: inherit;            
+  border-radius: 10px;
+}
+.topNav a.active {
+  color: white;
+  --borderWidth: 5px; 
+  border-radius: var(--borderWidth);
+  position: relative;
+  background-color:#2C2D28 ;
+  
+}
+.topNav a.active:after{
+  content:'';
+position:absolute;
+top: calc(-1 * var(--borderWidth));
+left: calc(-1 * var(--borderWidth));
+height: calc(100% + var(--borderWidth) * 2);
+width: calc(100% + var(--borderWidth) * 2);
+background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+border-radius: calc(2 * var(--borderWidth));
+z-index: -1;
+animation: animatedgradient 3s ease alternate infinite;
+background-size: 300% 300%;
+
+}
+
   
     /* When the screen is less than 600 pixels wide, 
     hide all links, except for the first one ("Home").*/
@@ -79,15 +91,15 @@
         }
       }
   
-    .topNav a:hover{
-      background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
-      box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-      cursor: pointer;
-      background-position: right center;
-      color: #fff;
-      text-decoration: none;
-    
-    }
+      .topNav a:hover{
+        background-image: linear-gradient(to right, #2C2D28 10%, grey 50%, #2C2D28 100%);
+        box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+        cursor: pointer;
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+      
+      }
   
   
     
@@ -170,6 +182,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
     color: black;
+    max-width: 100%;
     
   }
   
